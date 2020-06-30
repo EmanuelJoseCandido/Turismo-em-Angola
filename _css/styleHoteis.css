@@ -1,0 +1,246 @@
+/*Estilização Global*/
+
+/*Quartos*/
+.flex
+{
+    display: flex;
+}
+
+.flex-wrap
+{
+    flex-wrap: wrap;
+}
+
+.flex-lista-quartos-1
+{
+    flex: 1;
+}
+
+.lista-de-quartos
+{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3rem 3rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 2);
+}
+
+/* Padding-Left  e tamanoh da imagem max queries*/
+.recipiente-lista-de-quartos
+{
+    max-width: 1200px;
+    padding-left: 55px; 
+    margin: 0 auto;
+}
+
+.recipiente-lista-de-quartos .lista-de-quartos .informacoes-dos-quartos img
+{
+    height: 300px;
+    width: 300px;
+}
+
+.recipiente-lista-de-quartos .lista-de-quartos .informacoes-dos-quartos .botao-do-hotel
+{
+	padding: .7rem 2rem;
+    background-image: linear-gradient(135deg, rgba(255, 95, 0, 0.9) 0%, rgba(226, 53, 0, 0.8) 100%);
+    margin: .5rem;
+}
+
+.recipiente-lista-de-quartos .lista-de-quartos .informacoes-dos-quartos span
+{
+    display: block;
+    font-size: 15pt;
+}
+
+main h2
+{
+	text-align: center;
+    color: #FF5F00;
+    font-size: 30pt;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+/*Diversao*/
+
+.diversao
+{
+	border-radius: 50%;
+}
+
+.diversao img
+{
+	border-radius: 100%;
+}
+
+/*Diversao*/
+
+/*Quartos*/
+
+/* hoteis em Destaque */
+main .hoteis .hoteis2 div
+{
+    display: inline-block;
+	margin-left: 20px;
+}
+
+
+main .hoteis .destaques-conteudo
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 32.5%;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 2);
+	margin-bottom: 30px;
+}
+
+main .destaques-conteudo .titulo-do-hotel
+{
+    padding: 2rem 0;
+}
+
+main .destaques-conteudo .botao-do-hotel
+{
+    padding: .7rem 2rem;
+    background-image: linear-gradient(135deg, rgba(255, 95, 0, 0.9) 0%, rgba(226, 53, 0, 0.8) 100%);
+    margin: .5rem;
+}
+
+main .destaques-conteudo span
+{
+    display: block;
+	font-size: 12pt;
+}
+
+main .destaques-conteudo img
+{
+    height: 300px;
+    width: 300px;
+}
+
+main .hoteis h2
+{
+    text-align: center;
+    color: #FF5F00;
+    font-size: 30pt;
+    text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+/* hoteis em Destaque */
+
+
+/*Media Queries*/
+@media screen and (min-width: 788px)
+{
+
+    .actividades-grelha
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .actividades-grelha div
+    {
+        flex-grow: 1;
+        flex-basis: 150px;
+        margin-bottom: 30px;
+       
+    }
+
+    /*Cabecalho*/
+
+    header
+    {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1356px)
+{
+    header
+    {
+        width: 100%;
+        height: 5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+   
+    }
+
+    .hero
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 550px;
+        color: #f1f1f1;
+        padding-bottom: 550px;
+    }
+    
+    .menu ul li
+    {
+        width: 100%;
+        float: none;
+    }
+
+    .menu ul ul
+    {
+        overflow: hidden;
+        max-width: 0;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul
+    {
+        height: auto;
+        max-width: 1356px;
+    }
+
+    .testemunhos
+    {
+        margin-top: 50px;
+    }
+	
+	.quartos
+	{
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.quartos div
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.quartos div a 
+	{
+		text-decoration: none;
+		color: #1D2A38;
+	} 
+
+	
+}
+
+  
+
+
+
+
+
+
+
+
+

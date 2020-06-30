@@ -1,0 +1,391 @@
+/*Estilização Global*/
+
+
+.botao
+{
+    background-color: #FF5F00;
+    border-radius: 2rem;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    display: inline-block;
+    margin-top: 2rem;
+    padding:  1.5rem 4rem;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+    font-size: 12pt;
+}
+
+.btn1
+{
+    background-color: #FF5F00;
+    border-radius: 2rem;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    display: inline-block;
+    margin-top: 2rem;
+    padding:  1rem 2rem;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+    font-size: 12pt;
+}
+.botao, .btn1:hover
+{
+    background-color: #E23500;
+}
+
+/*Procurando fora de portas*/
+
+.exeperiencia-fora
+{
+    /* padding: 0; */
+    padding-top: 50px;
+   
+}
+
+.titulo-cabecalho
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.titulo-cabecalho h3
+{
+    font-size: 1.4rem;
+
+}
+
+.titulo-cabecalho h1
+{
+    font-size: 2rem;
+    margin-bottom: .5rem 0 1rem;
+}
+
+.titulo-cabecalho p
+{
+    text-transform: uppercase;
+    
+}
+
+.actividades-grelha
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;  
+}
+
+.actividades-grelha-itens
+{
+    height: 40rem;
+    padding: 5rem;
+    color: #fafafa; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.actividades-grelha-itens::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 95, 0, 0.9) 0%, rgba(226, 53, 0, 0.8) 100%);
+    z-index: -1;
+}
+
+.macon
+{
+    background: url("../_galeira/_imagens/Tarifarios_interprovincial/Macom/images_cms-image-000001322.jpg") center no-repeat;
+}
+
+.tcul
+{
+    background: url("../_galeira/_imagens/Tarifarios_interprovincial/Macom/ng1044278.jpg") center no-repeat;
+}
+
+.actividades-grelha-itens img
+{
+    margin-left: -5px;
+    width: 8%;
+    height: 20%;
+}
+
+/* testemunhos */
+
+
+.testemunho1
+{
+    margin-top: 20px;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 15pt;
+}
+
+.testemunho1 h1
+{
+    font-size: 30pt;
+    margin-bottom: 50px;
+}
+
+.testemunho1 div
+{
+    margin-bottom: 50px;
+}
+
+.testemunho1 div p a
+{
+    color: rgba(0, 0, 0, .7);
+    text-decoration: underline;
+}
+
+.testemunho1 div p
+{
+    font-size: 15pt;
+}
+
+.tarifarios
+{
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 12pt;
+}
+
+.tarifarios img
+{
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    color: #ce587b;
+    opacity: .5;
+    z-index: -1; 
+}
+
+.alterar-testemunho img
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 3px solid #fafafa; 
+}
+
+/* Começando Aventura */
+
+
+/*Hoteis-Provincias*/
+/* hoteis em Destaque */
+main .hoteis .hoteis2 div
+{
+    display: inline-block;
+}
+
+
+main .hoteis .destaques-conteudo
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 32.5%;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 2);
+	margin-bottom: 30px;
+}
+
+main .destaques-conteudo .titulo-do-hotel
+{
+    padding: 2rem 0;
+}
+
+main .destaques-conteudo .botao-do-hotel
+{
+    padding: .7rem 2rem;
+    background-image: linear-gradient(135deg, rgba(255, 95, 0, 0.9) 0%, rgba(226, 53, 0, 0.8) 100%);
+    margin: .5rem;
+}
+
+main .destaques-conteudo span
+{
+    display: block;
+	font-size: 12pt;
+}
+
+main .destaques-conteudo img
+{
+    height: 300px;
+    width: 300px;
+}
+
+main .hoteis h2
+{
+    text-align: center;
+    color: #FF5F00;
+    font-size: 30pt;
+    text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+/* hoteis em Destaque */
+
+.grelha-aventura
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, lfr));
+    grid-gap: 2.5rem;    
+    margin-bottom: 2rem;
+}
+
+.grelha-aventura-itens h2 
+{
+    color: rgba(0, 0, 0, .7);
+    font-size: 25pt;
+}
+
+.grelha-aventura-itens a 
+{
+    color: rgba(0, 0, 0, .7);
+    font-size: 15pt;
+    text-decoration: underline;
+}
+
+.grelha-aventura-itens li 
+{
+    margin-left: 20px;
+}
+
+.grelha-aventura-itens a:hover
+{
+    color: #FF5F00;
+    margin-left: 1px;
+    transition: all .4s;
+}
+
+.comecando-aventura .recipiente p
+{
+    margin-bottom: 10px;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 788px)
+{
+
+    .actividades-grelha
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .actividades-grelha div
+    {
+        flex-grow: 1;
+        flex-basis: 150px;
+        margin-bottom: 30px;
+       
+    }
+
+    /*Cabecalho*/
+
+    header
+    {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1356px)
+{
+    header
+    {
+        width: 100%;
+        height: 5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+   
+    }
+
+    .hero
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 550px;
+        color: #f1f1f1;
+        padding-bottom: 550px;
+    }
+    
+    .menu ul li
+    {
+        width: 100%;
+        float: none;
+    }
+
+    .menu ul ul
+    {
+        overflow: hidden;
+        max-width: 0;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul
+    {
+        height: auto;
+        max-width: 1356px;
+    }
+
+    .testemunhos
+    {
+        margin-top: 50px;
+    }
+	
+	#hoteis
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hoteis div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#hoteis div a 
+{
+    text-decoration: none;
+    color: #1D2A38;
+}
+
+
+    
+}
+
+  
+
+
+
+
+
+
+
+
+

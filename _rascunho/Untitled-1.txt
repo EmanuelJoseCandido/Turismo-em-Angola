@@ -1,0 +1,35 @@
+<nav id="menu">
+                    
+                    <a href="#" id="logotipo">App WeB <img src="_galeria/_imagens/_icones/logotipoP2.png" alt="Logotipo da App Web"></a>
+                    <input type="search" placeholder="Pesquisar">
+
+                    <ul>
+                        <li><a href="#menu">Home </a></li>
+                        <li><a href="#servicos">Onde Dormir </a></li>
+                            <ul>
+                                <li><a href="">Benguela</a></li>
+                                <li><a href="">Huambo</a></li>
+                                <li><a href="">Luanda</a></li>
+                                <li><a href="">Lubango</a></li>
+                                <li><a href="">Malanje</a></li>
+                            </ul> 
+                        <li><a href="#instalacoes">Como chegar </a></li>
+                        <li><a href="#instalacoes">Locais turisticos </a></li>
+                             <ul>
+                                <li><a href="">Resorts</a></li>
+                                <li><a href="">Paisagens</a></li>
+                            </ul> 
+                        <li><a href="#instalacoes">Aluger de Casas</a></li>
+                            <ul>
+                                <li><a href="">Benguela</a></li>
+                                <li><a href="">Huambo</a></li>
+                                <li><a href="">Luanda</a></li>
+                                <li><a href="">Lubango</a></li>
+                                <li><a href="">Malanje</a></li>
+                            </ul>
+                        <li><a href="#instalacoes">Como chegar </a></li>
+                        <li><a href="#sobre">Sobre </a></li>
+                        <li><a href="#contacto">Contacto </a></li>
+                        <li><a href="#parceiros">Parceiros </a></li>
+                    </ul>
+                </nav>

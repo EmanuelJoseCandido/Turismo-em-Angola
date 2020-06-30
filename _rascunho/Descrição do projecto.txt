@@ -1,0 +1,32 @@
+Cor: Laranja - Unitel
+SlideShow
+Menu:
+	Home
+	Onde dormir 
+		Luanda
+		Benguela
+		Huambo
+		Lubango
+		Malanje
+			Informações de Hoteis da mais baixo até o mais alto(economico)
+	Como chegar
+		Informações das empresas de tanporte: AngoReal e MACON
+	Locais turisticos
+		Resorts
+		Paisagens
+	Aluger de Casas
+		Luanda
+		Benguela
+		Huambo
+		Lubango
+		Malanje
+			Talatona
+			Maianga
+		Pesquisa
+		Cadastro de Pessoas
+		Serviços
+		Sobre
+		Contactos
+
+	
+	

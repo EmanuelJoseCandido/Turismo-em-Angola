@@ -1,0 +1,745 @@
+/*Estilização Global*/
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    box-sizing: border-box; 
+    text-align: justify;  
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+}
+
+p
+{
+    font-size: 1.6rem;
+}
+
+section
+{
+    padding: 5rem 0;
+}
+
+/* Slider */
+slider
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+slider > * 
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+
+slide:nth-child(1)
+{
+    left: 0;
+    animation-delay: -1s;
+    background-image: url("../_galeira/_imagens/_principais/principal1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(2)
+{
+    left: 0;
+    animation-delay: 2s;
+    background-image: url("../_galeira/_imagens/_principais/principal2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(3)
+{
+    left: 0;
+    animation-delay: 5s;
+    background-image: url("../_galeira/_imagens/_principais/principal3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+slide:nth-child(4)
+{
+    left: 0;
+    animation-delay: 8s;
+    background-image: url("../_galeira/_imagens/_principais/principal4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+slide p
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color: #fff;
+}
+
+@keyframes slide
+{
+    0% {left: 100%; width: 100%;}
+    5% {left: 0%;}
+    25% {left: 0%;}
+    30% {left: -100%; width: 100%;}
+    30.0001% {left: -100%; width: 0%;}
+    100% {left: 100%; width: 0%;}
+}
+
+/* Fim Slider */
+
+/*Cabecalho*/
+header
+{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+/*Nav*/
+
+.menu
+{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13pt;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.menu ul
+{
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li
+{
+    float: left;
+}
+
+.menu a
+{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+}
+
+.menu li:hover ul
+{
+    display:block;
+    position: relative;
+}
+
+.menu ul ul
+{
+    position: absolute;
+    visibility: hidden;
+    
+}
+
+.menu ul li:hover ul
+{
+    visibility: visible;
+}
+
+.menu a:hover
+{
+    background-color: #f4f4f4;
+    color: #555;
+    transition: all .4s;
+}
+
+.menu ul ul li
+{
+    float: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu ul ul li a
+{
+    background-color: #fafafa;
+    color: #555;
+}
+
+.nav-logotipo
+{
+    width: 2rem;
+}
+
+/*Nav*/
+
+.recipiente
+{
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding:  0 1.5rem;
+}
+
+
+
+.menu-icones img
+{
+    font-size: 3.5rem;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.fechar img
+{
+    color: #FF5F00; 
+}
+
+.fechar{
+    position: absolute;
+    top: 1rem;
+    left: 0.1rem;
+}
+
+.itens-nav
+{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .7);
+}
+
+.itens-nav
+{
+    margin: 1.5rem 0;
+}
+
+.link-nav
+{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .7);
+}
+
+.hero
+{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(255, 95, 0, 0.9) 0%, rgba(226, 53, 0, 0.8) 100%), url("../_galeira/_imagens/_principais/principal1.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 4.7rem;
+    background: url("../_galeria/_imagens/_principais/principal1.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.mensagem-principal
+{
+    width: 100%;
+    max-width: 50rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    transform:  translateY(20%);
+}
+
+.mensagem-principal h3
+{
+    font-size: 1.6rem;
+}
+
+.mensagem-principal h1
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+.mensagem-principal p
+{
+    text-transform: lowercase;
+}
+
+#btn2
+{
+    margin-left: 375px;
+}
+
+.botao
+{
+    background-color: #FF5F00;
+    border-radius: 2rem;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    display: inline-block;
+    margin-top: 2rem;
+    padding:  1.5rem 4rem;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+    font-size: 12pt;
+}
+
+.botao:hover
+{
+    background-color: #E23500;
+}
+
+/*Procurando fora de portas*/
+
+.exeperiencia-fora
+{
+    /* padding: 0; */
+    padding-top: 50px;
+   
+}
+
+.gastronomia
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+
+
+.gastronomia img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.gastronomia h3
+{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 12pt;
+}
+
+.gastronomia div .gast1
+{
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.gastronomia .recipiente2
+{
+    margin-left: 125px;
+}
+
+.titulo-cabecalho
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.titulo-cabecalho h3
+{
+    font-size: 1.4rem;
+
+}
+
+.titulo-cabecalho h1
+{
+    font-size: 2rem;
+    margin-bottom: .5rem 0 1rem;
+}
+
+.titulo-cabecalho p
+{
+    text-transform: uppercase;
+    
+}
+
+.actividades-grelha
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;  
+}
+
+.actividades-grelha h1
+{
+    font-size: 14pt;
+    margin-bottom: 2.5rem;
+}
+
+.actividades-grelha-itens
+{
+    height: 40rem;
+    padding: 5rem;
+    color: #fafafa; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.actividades-grelha-itens::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 95, 0, 0.9) 0%, rgba(226, 53, 0, 0.8) 100%);
+    z-index: -1;
+}
+
+.miradouro
+{
+    background: url("../_galeira/_imagens/Pontos_turisticos/miradouro\ da\ lua.jpg") center no-repeat;
+}
+
+.serra_da_leba
+{
+    background: url("../_galeira/_imagens/Pontos_turisticos/angola-509598_960_720.jpg") center no-repeat;
+}
+
+.quissama
+{
+    background: url("../_galeira/_imagens/Pontos_turisticos/sable-antelope-4361429_960_720.jpg") center no-repeat;
+}
+
+.actividades-grelha-itens img
+{
+    margin-left: -5px;
+    width: 8%;
+    height: 20%;
+}
+
+/* testemunhos */
+
+.testemunhos
+{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(255, 95, 0, 0.9) 0%, rgba(226, 53, 0, 0.8) 100%), url("../_galeria/_imagens/_principais/principal4.jpg") center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.testemunhos h1
+{
+   color:  #fafafa;
+   text-transform: uppercase;
+   font-size: 18pt;
+   text-align: center;
+}
+
+.testemunhos::before
+{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 4.7rem;
+    background: url("") center no-repeat;
+    background-size: cover;
+}
+
+.cinemas
+{
+    margin-left: 20px;
+}
+
+.testemunho
+{
+    width: 100%;
+    color: #fafafa;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    font-size: 14pt;
+}
+
+.testemunho-texto-quadrado
+{
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.testemunho-texto-quadrado img
+{
+    position: absolute;
+    top: -5rem;
+    bottom: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    color: #ce587b;
+    opacity: .5;
+    z-index: -1; 
+}
+
+.alterar-testemunho img
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 3px solid #fafafa; 
+}
+
+/*Diversao1*/
+.principal
+{
+	margin-top: 250px;
+}
+
+.diversao1
+{
+	text-align: center;
+	
+}
+
+.diversao1 a 
+{
+	color: rgba(0, 0, 0, .9);
+	font-size: 20pt;
+	transition: 1s;
+}
+
+.diversao1 a:hover
+{
+	color: #ccc;
+	font-size: 22pt;
+	text-decoration: underline;
+}
+
+.parques
+{
+	margin-top: 80px;
+}
+
+/*Diversao1*/
+
+.tarifarios
+{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.tarifarios li
+{
+	font-size: 18pt;
+}
+
+/* Começando Aventura */
+
+.grelha-aventura
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, lfr));
+    grid-gap: 2.5rem;    
+    margin-bottom: 2rem;
+}
+
+.grelha-aventura-itens p 
+{
+    color: rgba(0, 0, 0, .7);
+}
+
+footer
+{
+    padding:  2.5rem 0;
+    background-color: #141C25;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+footer a
+{
+    color: #FF5F00;
+    transition: 1s;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+    color: #E23500;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 788px)
+{
+
+    .actividades-grelha
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .actividades-grelha div
+    {
+        flex-grow: 1;
+        flex-basis: 150px;
+        margin-bottom: 30px;
+       
+    }
+
+    /*Cabecalho*/
+
+    header
+    {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1356px)
+{
+    header
+    {
+        width: 100%;
+        height: 5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+   
+    }
+
+    .hero
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 550px;
+        color: #f1f1f1;
+        padding-bottom: 550px;
+    }
+    
+    .menu ul li
+    {
+        width: 100%;
+        float: none;
+    }
+
+    .menu ul ul
+    {
+        overflow: hidden;
+        max-width: 0;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul
+    {
+        height: auto;
+        max-width: 1356px;
+    }
+
+    .testemunhos
+    {
+        margin-top: 50px;
+    }
+
+    .gastronomia
+    {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gastronomia div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .gast1
+    {
+        margin-right: 110px;
+        margin-bottom: 50px;
+    }
+
+    #btn2
+    {
+        margin-left: 10px;
+    }
+
+    .actividades-grelha div
+    {
+        margin-bottom: 50px;
+    }
+
+    .actividades-grelha h1
+    {
+        margin-top: 30px;
+    }
+
+    
+}
+
+  
+
+
+
+
+
+
+
+
+

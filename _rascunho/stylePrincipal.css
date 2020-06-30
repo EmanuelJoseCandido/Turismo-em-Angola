@@ -1,0 +1,80 @@
+html, body
+{
+    margin:  0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*Classes Globais*/
+
+a
+{
+    text-decoration: none;
+}
+
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+/*Início Navegaçaõ*/
+
+.nav
+{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 40vh;
+    overflow: hidden;
+}
+
+.nav .itens-navegacao
+{ 
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-menu
+{ 
+    justify-content: space-between;
+}
+
+.nav .itens-navegacao .link-navegacao
+{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.nav .nav-logotipo
+{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+}
+
+.nav .social
+{
+    padding: 14rem 0; 
+}
+
+/*Fim Navegaçaõ*/
+
+/*Inicio Vizualização menor ou igual 750px*/
+
+@media only screen and(max-width: 750px)
+{
+    .nav .nav-menu
+    {
+        flex-direction: column;
+    }
+}
+
+/*Fim Vizualização menor ou igual 750px*/
